@@ -783,6 +783,21 @@ sub remove_plurals($$) {
 
 
 
+=head2 build_tags_taxonomy( $tagtype, $file, $publish )
+
+Build taxonomy from the taxonomy file
+
+=head3 Arguments
+
+=head4 str $tagtype - the tagtype
+
+Like "categories", "ingredients"
+
+=head3 $file - name of the file to read in taxonomies folder
+
+=head3 $publish - if 1, store the result in sto
+
+=cut
 sub build_tags_taxonomy($$$) {
 
 	my $tagtype = shift;
@@ -807,6 +822,8 @@ sub build_tags_taxonomy($$$) {
 	$root_entries{$tagtype} = {};
 
 	$just_tags{$tagtype} = {};
+	# synonyms that are not real entries, but only enrich existing tags
+	# they correspond to synonyms: entries
 	$just_synonyms{$tagtype} = {};
 	$properties{$tagtype} = {};
 
@@ -2582,15 +2599,6 @@ sub get_taxonomy_tag_and_link_for_lang($$$) {
 
 
 
-sub display_tags_list_orig($$) {
-
-	my $tagtype = shift;
-	my $tags_list = shift;
-	my $html = join(', ', map { display_tag_link($tagtype, $_) } split(/,/, $tags_list));
-	return $html;
-}
-
-
 sub display_tags_list($$) {
 
 	my $tagtype = shift;
@@ -2897,23 +2905,6 @@ sub list_taxonomy_tags_in_language($$$) {
 	else {
 		return "";
 	}
-}
-
-
-sub canonicalize_saint($) {
-	my $s = shift;
-	return "Saint-" . ucfirst($s);
-}
-
-
-sub capitalize_tag($)
-{
-	my $tag = shift;
-	$tag = ucfirst($tag);
-	$tag =~ s/(?<= |_|')(\w)(?!')/uc($1)/eg;
-	$tag =~ s/\b(de|du|des|au|aux|des|à|a|en|le|la|les)\b/lcfirst($1)/eig;
-	$tag =~ s/(?<=_)(de|du|des|au|aux|des|à|a|en|le|la|les)(?=_)/lcfirst($1)/eig;
-	return $tag;
 }
 
 
