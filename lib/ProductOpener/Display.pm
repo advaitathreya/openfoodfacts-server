@@ -5206,8 +5206,6 @@ sub search_and_display_products($request_ref, $query_ref, $sort_by, $limit, $pag
 
 		for my $product_ref (@{$request_ref->{structured_response}{products}}) {
 			my $img_url;
-			my $img_w;
-			my $img_h;
 
 			my $code = $product_ref->{code};
 			my $img = display_image_thumb($product_ref, 'front');
@@ -6693,7 +6691,6 @@ sub display_page($request_ref) {
 
 	$log->debug("displaying page", { title => $title }) if $log->is_debug();
 
-	my $object_ref;
 	my $type;
 	my $id;
 
@@ -6906,7 +6903,6 @@ sub display_page($request_ref) {
 	my $image_banner = "";
 	my $link = lang("donate_link");
 	my $image;
-	my $utm;
 	my @banners = qw(independent personal research);
 	my $banner = $banners[time() % @banners];
 	$image = "/images/banners/donate/donate-banner.$banner.$lc.800x150.svg";
@@ -9268,7 +9264,6 @@ CSS
 			}
 			my @columns;
 			my @extra_row_columns;
-			my @ecological_impact_columns;
 
 			my $extra_row = 0;	# Some rows will trigger an extra row (e.g. Salt adds Sodium)
 
