@@ -205,10 +205,7 @@ scripts/update_packager_codes.pl
 scripts/update_packager_codes_fsa_ratings.pl
 scripts/update_recent_changes.pl
 scripts/update_top_translators.pl
-t/additives.t
-t/additives_tags.t
 t/allergens.t
-t/allergens_tags.t
 t/attributes.t
 t/dataquality.t
 t/dataqualityfood.t
