@@ -1,5 +1,43 @@
 # Changelog
 
+## [1.8.0](https://github.com/openfoodfacts/openfoodfacts-server/compare/v1.7.0...v1.8.0) (2022-07-15)
+
+
+### Features
+
+* Nutrient levels knowledge panels with facts and recommendations ([#6980](https://github.com/openfoodfacts/openfoodfacts-server/issues/6980)) ([80911fa](https://github.com/openfoodfacts/openfoodfacts-server/commit/80911fa568de12bd07c82c27bf180ea72f92586d))
+* parse origins of ingredients field ([#6995](https://github.com/openfoodfacts/openfoodfacts-server/issues/6995)) ([79fa9ae](https://github.com/openfoodfacts/openfoodfacts-server/commit/79fa9ae46a45bef89026c87375a63de401f2b3b3))
+
+
+### Bug Fixes
+
+* add missing subdomain to redirect url [#6993](https://github.com/openfoodfacts/openfoodfacts-server/issues/6993) ([#7019](https://github.com/openfoodfacts/openfoodfacts-server/issues/7019)) ([7b1029b](https://github.com/openfoodfacts/openfoodfacts-server/commit/7b1029bf28ddeb54f4a5cead70b48bcf8badfbb9))
+* better wording for adding a precise category ([#7038](https://github.com/openfoodfacts/openfoodfacts-server/issues/7038)) ([42398be](https://github.com/openfoodfacts/openfoodfacts-server/commit/42398bef9879a6cecc34595f9267b7dc3cca20b4))
+* Initialization of state variables in list context currently forbidden ([44b9fc1](https://github.com/openfoodfacts/openfoodfacts-server/commit/44b9fc1f4067fe40c3bacb8d6dc8ce733045a892))
+* Initialization of state variables in list context currently forbidden (perl version < 5.28) ([#7058](https://github.com/openfoodfacts/openfoodfacts-server/issues/7058)) ([44b9fc1](https://github.com/openfoodfacts/openfoodfacts-server/commit/44b9fc1f4067fe40c3bacb8d6dc8ce733045a892))
+* Made changes in the readme file ([#4859](https://github.com/openfoodfacts/openfoodfacts-server/issues/4859)) ([fcb8727](https://github.com/openfoodfacts/openfoodfacts-server/commit/fcb87279887f996853842e5244de0b06b5277191))
+* set access-control-allow-credentials=true in auth.pl  ([#7022](https://github.com/openfoodfacts/openfoodfacts-server/issues/7022)) ([423df0f](https://github.com/openfoodfacts/openfoodfacts-server/commit/423df0f8d3cc291fb09dd842415289f2df1d55e1))
+* uninitialized value ([#6997](https://github.com/openfoodfacts/openfoodfacts-server/issues/6997)) ([28bcc4d](https://github.com/openfoodfacts/openfoodfacts-server/commit/28bcc4dc0fecf4d55f16198e0ebc5ae602bc80ca))
+
+
+### Translations
+
+* New Crowdin translations to review and merge ([#6975](https://github.com/openfoodfacts/openfoodfacts-server/issues/6975)) ([2c726f2](https://github.com/openfoodfacts/openfoodfacts-server/commit/2c726f2626512201ba8e4ca4313cda7924ff08db))
+
+
+### Taxonomy
+
+* add new Polish translations ([#7068](https://github.com/openfoodfacts/openfoodfacts-server/issues/7068)) ([3f0db87](https://github.com/openfoodfacts/openfoodfacts-server/commit/3f0db8778506cd0a55d97b3fcaeab379e79d94ff))
+* add polish name of UHT pasteurised milk to ingridients.txt ([#6976](https://github.com/openfoodfacts/openfoodfacts-server/issues/6976)) ([64e2a81](https://github.com/openfoodfacts/openfoodfacts-server/commit/64e2a81bef1d7ce7eb980c4b48bde436b9a1688e))
+* Changed some entries, mostly double entries ([#7049](https://github.com/openfoodfacts/openfoodfacts-server/issues/7049)) ([fdaac75](https://github.com/openfoodfacts/openfoodfacts-server/commit/fdaac75234717de5c4fd3d9165583a2f7100b4d2))
+* Corrections to cheeses ([#7065](https://github.com/openfoodfacts/openfoodfacts-server/issues/7065)) ([67c3c74](https://github.com/openfoodfacts/openfoodfacts-server/commit/67c3c74d6de6496fd967da7b30b8d2eb25d9db54))
+* Finnish products ([#6950](https://github.com/openfoodfacts/openfoodfacts-server/issues/6950)) ([efa31c7](https://github.com/openfoodfacts/openfoodfacts-server/commit/efa31c7e447153048471e13d924660e771b549e6))
+* Fixed paprika issue ([#7035](https://github.com/openfoodfacts/openfoodfacts-server/issues/7035)) ([2227200](https://github.com/openfoodfacts/openfoodfacts-server/commit/2227200a90d6a49749a59e240ac55dde556796fa))
+* flaxseed fiber ([#6945](https://github.com/openfoodfacts/openfoodfacts-server/issues/6945)) ([075be82](https://github.com/openfoodfacts/openfoodfacts-server/commit/075be82f760c4155eea8ebe4061c136dd9c6642c))
+* Meat patties ([#7002](https://github.com/openfoodfacts/openfoodfacts-server/issues/7002)) ([e1f1c3b](https://github.com/openfoodfacts/openfoodfacts-server/commit/e1f1c3b13c9283a5293b31e8585d3fda0da203ef))
+* Polish translations of ingredient processing ([#7029](https://github.com/openfoodfacts/openfoodfacts-server/issues/7029)) ([fb53651](https://github.com/openfoodfacts/openfoodfacts-server/commit/fb536516a9c63a8a74c5d07fdf52627e6ceb47e7))
+* Synonyms for cs ([#6979](https://github.com/openfoodfacts/openfoodfacts-server/issues/6979)) ([b7344d6](https://github.com/openfoodfacts/openfoodfacts-server/commit/b7344d676af427c025319a204db1433502966878))
+
 ## [1.7.0](https://github.com/openfoodfacts/openfoodfacts-server/compare/v1.6.0...v1.7.0) (2022-06-27)
 
 
